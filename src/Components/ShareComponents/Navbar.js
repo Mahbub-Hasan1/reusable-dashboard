@@ -25,23 +25,29 @@ const Navbar = ({ setOpen, open }) => (
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
                         <a className="nav-link" href="/">
-                            Dashboard
+                            Home
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/">
-                            Team
+                        <a className="nav-link" href="/about">
+                            About
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/">
-                            Projects
+                        <a className="nav-link" href="/services">
+                            Services
+                        </a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" href="/contactInfo">
+                            Contact
                         </a>
                     </li>
                 </ul>
             </div>
 
             <div className="d-flex align-items-center">
+                
                 <a className="text-reset me-3" href="/">
                     <i className="fas fa-shopping-cart icons-color" />
                 </a>
@@ -79,7 +85,7 @@ const Navbar = ({ setOpen, open }) => (
                 </ul>
 
                 <div
-                    className="dropdown-toggle d-flex align-items-center hidden-arrow"
+                    className="dropdown-toggle d-flex align-items-center hidden-arrow me-3"
                     id="navbarDropdownMenuLink"
                     role="button"
                     data-mdb-toggle="dropdown"
@@ -113,6 +119,7 @@ const Navbar = ({ setOpen, open }) => (
                         </a>
                     </li>
                 </ul>
+                <button className="btn btn-primary">Login</button>
             </div>
 
             <button

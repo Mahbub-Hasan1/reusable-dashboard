@@ -11,9 +11,10 @@ import clsx from 'clsx';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import About from '../Components/Dashboard/About';
+import ContactInfo from '../Components/Dashboard/ContactInfo';
 import Dashboard from '../Components/Dashboard/Dashboard';
 import Services from '../Components/Dashboard/Services';
-import Footer from '../Components/ShareComponents/Footer';
+import Login from '../Components/Login/Login';
 import Navbar from '../Components/ShareComponents/Navbar';
 import Sidebar from '../Components/ShareComponents/Sidebar';
 
@@ -33,6 +34,16 @@ const routes = [
         path: '/services',
         sidebar: () => <h3>services!</h3>,
         main: () => <Services />,
+    },
+    {
+        path: '/contactInfo',
+        sidebar: () => <h3>Contact Info!</h3>,
+        main: () => <ContactInfo />,
+    },
+    {
+        path: '/login',
+        sidebar: () => <h3>Login!</h3>,
+        main: () => <Login />,
     },
 ];
 
@@ -103,7 +114,7 @@ const Layout = () => {
     return (
         <div>
             <Router>
-                <div className={`${classes.root} main-pages-container`}>
+                <div className={classes.root}>
                     <CssBaseline />
 
                     <AppBar
@@ -184,7 +195,6 @@ const Layout = () => {
                             </Switch>
                         </Container>
                     </main>
-                    <Footer />
                 </div>
 
                 {/* footer ========================================== */}

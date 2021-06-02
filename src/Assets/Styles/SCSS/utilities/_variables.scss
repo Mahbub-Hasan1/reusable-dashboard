@@ -11,29 +11,6 @@ $light: #f5f5f5;
 $dark: #262626;
 $silver: #c5c9c7;
 
-$colors: (
-  primary: $primary,
-  secondary: $secondary,
-  success: $success,
-  info: $info,
-  warning: $warning,
-  anger: $danger,
-  light: $light,
-  dark: $dark,
-);
-
-@each $key, $color in $colors {
-  .#{$color}-text {
-    color: $color;
-  }
-}
-
-@each $key, $color in $colors {
-  .#{$color}-bg {
-    color: $color;
-  }
-}
-
 // background color
 $Navbar-bgColor: $light;
 $main-bgColor: $light;
