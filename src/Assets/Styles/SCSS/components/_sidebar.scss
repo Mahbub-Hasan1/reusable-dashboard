@@ -1,0 +1,18 @@
+
+@import '../utilities/variables';
+
+.sidebar_logo{
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar{
+    ul{
+        a{
+            text-decoration: none;
+            h6{
+                color: $sidebar-links;
+            }
+        }
+    }
+}

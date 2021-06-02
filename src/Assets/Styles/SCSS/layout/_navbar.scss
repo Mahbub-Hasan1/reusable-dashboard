@@ -1,0 +1,11 @@
+@import "../utilities/variables";
+
+.bg-navbar {
+  background: $Navbar-bgColor;
+}
+
+@media (max-width: 991px) {
+  .d-none_responsive {
+    display: none !important;
+  }
+}
