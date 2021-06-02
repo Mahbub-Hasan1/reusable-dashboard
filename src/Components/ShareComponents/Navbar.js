@@ -1,5 +1,6 @@
 import MenuIcon from '@material-ui/icons/Menu';
 import React from 'react';
+import Link from "react-router-dom";
 
 const Navbar = ({ setOpen, open }) => (
     <nav className="navbar navbar-expand-lg navbar-light bg-navbar">
@@ -119,7 +120,7 @@ const Navbar = ({ setOpen, open }) => (
                         </a>
                     </li>
                 </ul>
-                <button className="btn btn-primary">Login</button>
+                <Link to="login"><button className="btn btn-primary">Login</button></Link>
             </div>
 
             <button
