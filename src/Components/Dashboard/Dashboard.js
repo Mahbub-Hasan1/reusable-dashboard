@@ -10,6 +10,7 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 import clsx from 'clsx';
 import React from 'react';
 import { Switch } from 'react-router-dom';
+import { AppContext } from '../../App';
 import RouteWithSubRoutes from '../../Routes/RouteWithSubRoutes';
 import Navbar from '../ShareComponents/Navbar';
 import Sidebar from '../ShareComponents/Sidebar';
@@ -77,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
 const Layout = ({ routes }) => {
     const classes = useStyles();
     const theme = useTheme();
-    const [open, setOpen] = React.useState(true);
+    const {open, setOpen} = React.useContext(AppContext);
 
     return (
         <div>
@@ -91,7 +92,7 @@ const Layout = ({ routes }) => {
                     })}
                 >
                     {/* Navbar/App bar ======================================== */}
-                    <Navbar open={open} setOpen={setOpen} />
+                    <Navbar/>
                 </AppBar>
 
                 {/* sidebar contents ============================================= */}

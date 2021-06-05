@@ -22,7 +22,7 @@ const Sidebar = () => (
                     <h6 className="mb-0">Home</h6>
                 </ListItem>
             </Link>
-            <Link to="/about">
+            <Link to="/dashboard/about">
                 <ListItem button>
                     <ListItemIcon>
                         <InfoIcon />
@@ -30,7 +30,7 @@ const Sidebar = () => (
                     <h6 className="mb-0">About</h6>
                 </ListItem>
             </Link>
-            <Link to="/services">
+            <Link to="/dashboard/services">
                 <ListItem button>
                     <ListItemIcon>
                         <RoomServiceIcon />
@@ -38,7 +38,7 @@ const Sidebar = () => (
                     <h6 className="mb-0">Service</h6>
                 </ListItem>
             </Link>
-            <Link to="/contactInfo">
+            <Link to="/dashboard/contactInfo">
                 <ListItem button>
                     <ListItemIcon>
                         <ContactsIcon />

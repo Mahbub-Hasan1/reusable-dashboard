@@ -2,10 +2,8 @@ import Container from '@material-ui/core/Container';
 import React from 'react';
 
 const Login = () => {
-    const dld = 9;
     return (
         <Container maxWidth="xl" className="login_area">
-            
             {/* -- Pills navs -- */}
             <ul className="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
                 <li className="nav-item" role="presentation">

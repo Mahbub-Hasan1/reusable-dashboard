@@ -34,12 +34,6 @@ a {
   background: #f5f5f5;
 }
 
-.route_sidebar h3 {
-  font-weight: 900;
-  color: #ffa900;
-  text-transform: uppercase;
-}
-
 footer {
   position: absolute;
   bottom: 0;
@@ -52,7 +46,7 @@ footer {
 }
 
 .bg-navbar {
-  background: #f5f5f5;
+  background: white;
 }
 
 @media (max-width: 991px) {
