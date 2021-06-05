@@ -1,9 +1,11 @@
+import Container from '@material-ui/core/Container';
 import React from 'react';
 
 const Login = () => {
     const dld = 9;
     return (
-        <div style={{ background: '#fff', width: "60%" }}>
+        <Container maxWidth="xl" className="login_area">
+            
             {/* -- Pills navs -- */}
             <ul className="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
                 <li className="nav-item" role="presentation">
@@ -89,9 +91,9 @@ const Login = () => {
                                     <input
                                         className="form-check-input"
                                         type="checkbox"
+                                        defaultChecked
                                         value=""
                                         id="loginCheck"
-                                        checked
                                     />
                                     <label className="form-check-label" htmlFor="loginCheck">
                                         {' '}
@@ -196,9 +198,9 @@ const Login = () => {
                             <input
                                 className="form-check-input me-2"
                                 type="checkbox"
+                                defaultChecked
                                 value=""
                                 id="registerCheck"
-                                checked
                                 aria-describedby="registerCheckHelpText"
                             />
                             <label className="form-check-label" htmlFor="registerCheck">
@@ -214,7 +216,7 @@ const Login = () => {
                 </div>
             </div>
             {/* -- Pills content -- */}
-        </div>
+        </Container>
     );
 };
 

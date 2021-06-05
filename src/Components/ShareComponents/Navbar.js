@@ -25,7 +25,7 @@ const Navbar = ({ setOpen, open }) => (
 
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                        <a className="nav-link" href="/">
+                        <a className="nav-link" href="/dashboard">
                             Home
                         </a>
                     </li>
@@ -120,7 +120,7 @@ const Navbar = ({ setOpen, open }) => (
                         </a>
                     </li>
                 </ul>
-                <Link to="login"><button className="btn btn-primary">Login</button></Link>
+                <Link to="/login"><button className="btn btn-primary">Login</button></Link>
             </div>
 
             <button

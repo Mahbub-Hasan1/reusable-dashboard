@@ -1,0 +1,15 @@
+@import "../utilities/variables";
+
+.login_area {
+  background: $white;
+  input {
+    border: 2px solid $silver !important;
+  }
+  input:focus {
+    border: 2px solid $primary !important;
+  }
+  label {
+    background: $white !important;
+    padding: 0px 5px;
+  }
+}
