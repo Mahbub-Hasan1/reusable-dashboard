@@ -15,7 +15,6 @@ import RouteWithSubRoutes from '../../Routes/RouteWithSubRoutes';
 import Navbar from '../ShareComponents/Navbar';
 import Sidebar from '../ShareComponents/Sidebar';
 
-
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -78,7 +77,7 @@ const useStyles = makeStyles((theme) => ({
 const Layout = ({ routes }) => {
     const classes = useStyles();
     const theme = useTheme();
-    const {open, setOpen} = React.useContext(AppContext);
+    const { open, setOpen } = React.useContext(AppContext);
 
     return (
         <div>
@@ -92,7 +91,7 @@ const Layout = ({ routes }) => {
                     })}
                 >
                     {/* Navbar/App bar ======================================== */}
-                    <Navbar/>
+                    <Navbar />
                 </AppBar>
 
                 {/* sidebar contents ============================================= */}
@@ -113,11 +112,7 @@ const Layout = ({ routes }) => {
                             />
                         </div>
                         <IconButton>
-                            {theme.direction === 'ltr' ? (
-                                <ChevronLeftIcon />
-                            ) : (
-                                <ChevronRightIcon />
-                            )}
+                            {theme.direction === 'ltr' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
                         </IconButton>
                     </div>
 
@@ -147,7 +142,6 @@ const Layout = ({ routes }) => {
             </div>
 
             {/* footer ========================================== */}
-
         </div>
     );
 };
