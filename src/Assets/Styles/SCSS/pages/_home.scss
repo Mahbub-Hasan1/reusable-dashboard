@@ -1,2 +1,27 @@
+@import "../utilities/variables";
 .homePage {
+  div {
+    .home_main {
+      justify-content: center;
+      align-items: center;
+      div {
+        .card {
+          width: auto;
+          height: 300px;
+          padding: 20px;
+          margin: 5px;
+          display: flex;
+          justify-content: center;
+          //   border: 2px solid $primary;
+          //   img {
+          //     height: 100%;
+          //   }
+        }
+      }
+    }
+    .home_login_card {
+      padding: 30px 0px;
+      margin: 5px 0px;
+    }
+  }
 }

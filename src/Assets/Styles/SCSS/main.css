@@ -30,12 +30,23 @@ a {
   min-height: 100vh;
 }
 
+.react-spinner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.react-spinner h2 {
+  color: #1266f1;
+  font-weight: bold;
+}
+
 .main-contents {
   background: #f5f5f5;
 }
 
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   background: #f5f5f5;
@@ -78,6 +89,23 @@ footer {
 .login_area label {
   background: white !important;
   padding: 0px 5px;
+}
+
+.homePage div .home_main {
+  justify-content: center;
+  align-items: center;
+}
+.homePage div .home_main div .card {
+  width: auto;
+  height: 300px;
+  padding: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+}
+.homePage div .home_login_card {
+  padding: 30px 0px;
+  margin: 5px 0px;
 }
 
 /*******************************************************************

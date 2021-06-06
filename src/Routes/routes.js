@@ -1,9 +1,9 @@
-import About from "../Components/Dashboard/About";
-import ContactInfo from "../Components/Dashboard/ContactInfo";
-import Dashboard from "../Components/Dashboard/Dashboard";
-import Login from "../Components/Login/Login";
-import HomePage from "../Pages/HomePage";
-import PageNotFound from "../Pages/PageNotFound";
+import About from '../Components/Dashboard/About';
+import ContactInfo from '../Components/Dashboard/ContactInfo';
+import Dashboard from '../Components/Dashboard/Dashboard';
+import Login from '../Components/Login/Login';
+import HomePage from '../Pages/HomePage';
+import PageNotFound from '../Pages/PageNotFound';
 
 const routes = [
     {
@@ -17,7 +17,7 @@ const routes = [
     {
         path: '/dashboard',
         component: Dashboard,
-        // addad nested routes 
+        // addad nested routes
         routes: [
             {
                 path: '/dashboard/about',
@@ -27,7 +27,7 @@ const routes = [
                 path: '/dashboard/contactInfo',
                 component: ContactInfo,
             },
-        ]
+        ],
     },
     {
         path: '*',

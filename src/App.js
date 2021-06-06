@@ -1,7 +1,6 @@
-import { css } from '@emotion/react';
 import React, { createContext } from 'react';
 import { BrowserRouter, Redirect, Switch } from 'react-router-dom';
-import ClipLoader from 'react-spinners/ClipLoader';
+import RingLoader from 'react-spinners/RingLoader';
 import './Assets/Styles/SCSS/main.css';
 import Footer from './Components/ShareComponents/Footer';
 import routes from './Routes/routes';
@@ -9,16 +8,9 @@ import RouteWithSubRoutes from './Routes/RouteWithSubRoutes';
 
 export const AppContext = createContext();
 
-const override = css`
-    display: block;
-    margin: 0 auto;
-    border-color: red;
-`;
-
 function App() {
     const [open, setOpen] = React.useState(true);
     const [loading, setLoading] = React.useState(true);
-    const [color, setColor] = React.useState('#ffffff');
 
     React.useEffect(
         () =>
@@ -29,9 +21,12 @@ function App() {
     );
 
     return (
-        <div>
+        <div id="App">
             {loading ? (
-                <ClipLoader color={color} loading={loading} css={override} size={150} />
+                <div className="react-spinner">
+                    <RingLoader color="#1266f1" loading={loading} size={60} />
+                    <h5>Mahbub-Hasan....</h5>
+                </div>
             ) : (
                 <AppContext.Provider value={{ open, setOpen }}>
                     <BrowserRouter>
