@@ -1,5 +1,6 @@
 import Container from '@material-ui/core/Container';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -85,7 +86,7 @@ const Login = () => {
                         <div className="row mb-4">
                             <div className="col-md-6 d-flex justify-content-center">
                                 {/* -- Checkbox -- */}
-                                <div className="form-check mb-3 mb-md-0">
+                                <div className="form-check mb-3 mb-md-0 text-truncate">
                                     <input
                                         className="form-check-input"
                                         type="checkbox"
@@ -93,7 +94,7 @@ const Login = () => {
                                         value=""
                                         id="loginCheck"
                                     />
-                                    <label className="form-check-label" htmlFor="loginCheck">
+                                    <label className="form-check-label text-truncate" htmlFor="loginCheck">
                                         {' '}
                                         Remember me{' '}
                                     </label>
@@ -107,13 +108,15 @@ const Login = () => {
                         </div>
 
                         {/* -- Submit button -- */}
-                        <button type="submit" className="btn btn-primary btn-block mb-4">
-                            Sign in
-                        </button>
+                        <Link to="/dashboard">
+                            <button type="submit" className="btn btn-primary btn-block mb-4">
+                                Sign in
+                            </button>
+                        </Link>
 
                         {/* -- Register buttons -- */}
                         <div className="text-center">
-                            <p>
+                            <p className="text-truncate">
                                 Not a member? <a href="#!">Register</a>
                             </p>
                         </div>
@@ -207,9 +210,11 @@ const Login = () => {
                         </div>
 
                         {/* -- Submit button -- */}
-                        <button type="submit" className="btn btn-primary btn-block mb-3">
-                            Sign in
-                        </button>
+                        <Link to="/dashboard">
+                            <button type="submit" className="btn btn-primary btn-block mb-3">
+                                Sign in
+                            </button>
+                        </Link>
                     </form>
                 </div>
             </div>

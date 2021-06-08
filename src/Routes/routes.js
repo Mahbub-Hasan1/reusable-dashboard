@@ -1,6 +1,7 @@
 import About from '../Components/Dashboard/About';
 import ContactInfo from '../Components/Dashboard/ContactInfo';
 import Dashboard from '../Components/Dashboard/Dashboard';
+import Services from '../Components/Dashboard/Services';
 import Login from '../Components/Login/Login';
 import HomePage from '../Pages/HomePage';
 import PageNotFound from '../Pages/PageNotFound';
@@ -19,6 +20,10 @@ const routes = [
         component: Dashboard,
         // addad nested routes
         routes: [
+            {
+                path: '/dashboard/services',
+                component: Services,
+            },
             {
                 path: '/dashboard/about',
                 component: About,

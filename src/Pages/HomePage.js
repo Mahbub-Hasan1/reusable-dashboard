@@ -1,9 +1,5 @@
 import Container from '@material-ui/core/Container';
 import React from 'react';
-import img1 from '../Assets/Images/Chart1.gif';
-import img3 from '../Assets/Images/Chart2.gif';
-import img2 from '../Assets/Images/Chart3.gif';
-import img4 from '../Assets/Images/Chart4.png';
 import Login from '../Components/Login/Login';
 import Navbar from '../Components/ShareComponents/Navbar';
 
@@ -13,31 +9,16 @@ const HomePage = () => {
             <Navbar />
             <Container maxWidth="xl">
                 <div className="row">
-                    <div className="col-md-8 home_main row mt-2">
-                        <div className="col-md-6">
-                            <div className="card">
-                                <img src={img1} alt="" />
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="card">
-                                <img src={img2}  alt="" />
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="card">
-                                <img src={img3}  alt="" />
-                            </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="card">
-                                <img src={img4}  alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-4 card home_login_card">
+                    <div className="col-md-3 card home_login_card">
                         <Login />
                     </div>
+                    <div className="col-md-9 home_main mt-5">
+                        <div className="card">
+                            <h1>This is my dashboard</h1>
+                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum accusamus beatae ipsum minus mollitia doloremque sunt omnis deserunt cumque qui, fuga dignissimos quod pariatur labore officiis earum perferendis, dicta quaerat.</h5>
+                        </div>
+                    </div>
+
                 </div>
             </Container>
         </div>
